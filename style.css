@@ -7,5 +7,5 @@ html {
 }
 
 .topper{
-    background-color: pink;
+    background-color: var(--rose);
 }
