@@ -1,0 +1,11 @@
+html {
+    --pink: #E67E93;
+    --lgreen: #F0F0E3;
+    --lyell: #F1EBC7;
+    --rose: #E0B2AB;
+    --brown: #82665D;
+}
+
+.topper{
+    background-color: pink;
+}
