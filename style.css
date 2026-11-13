@@ -25,13 +25,28 @@ body{
 /* Title */
 
 .titular{
-    text-align: center;
-    text-shadow: 1px 1px 1px black;
-    color: var(--pink);
-    font-size: 50px;
-    font-weight: 700;
     height: 5vw;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo {
+    background-color: transparent;
+    width: 45vw;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 /* Bow */
