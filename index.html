@@ -11,6 +11,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
 
+    <!-- Scripting -->
+
+    <script>
+        function imgcel(imgs) {
+
+            // Get image and text
+            var expandImg = document.getElementById("expandedImg");
+
+            var imgText = document.getElementById("imgtext");
+
+            // Use the src and alt value for image and text
+            expandImg.src = imgs.src;
+
+            imgText.innerHTML = imgs.alt;
+
+            // Show the element
+            expandImg.parentElement.style.display = "block";
+
+        }
+    </script>
+
 </head>
 
 <body>
@@ -19,7 +40,7 @@
 
     <div class="titular">
         <div class="logo">
-            <img src="Images/logo.png">
+            <img src="Images/ylogo.png">
         </div>
     </div>
 
@@ -34,7 +55,25 @@
     <div class="topper">
 
         <div class="topimg">
-            <img src="Images/Gingerbread cookies.jpg">
+
+            <div class="bigpic">
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+
+            <div class="lineup">
+                <div class="linimg">
+                    <img src="Images/Gingerbread cookies.jpg" alt="Gingerbread Cookies" onclick="imgcel(this);" onload="imgcel(this);">
+                </div>
+                <div class="linimg">
+                    <img src="Images/Pumpkin spice cupcake with vanilla buttercream.jpg" alt="Pumpkin Spice cupcake with Vanilla Buttercream how does this handle big sentence" onclick="imgcel(this);">
+                </div>
+                <div class="linimg">
+                    <img src="Images/Easter cupcakes lemon, strawberry, vanilla, and carrot cake flavors.jpg(1).jpg" alt="Easter Flavors" onclick="imgcel(this);">
+                </div>
+                
+            </div>
+
         </div>
 
         <div class="toptext">
@@ -101,14 +140,87 @@
         </div>
     </div>
 
+    <!-- Contact Section -->
+
+    <div class="contact">
+
+        <div class="context">
+            <p>
+                Something about contacting you can go here. Maybe talk about how people
+                can custom order cupcakes or ask you question. We should also put the
+                FAQs here, or we can put a link to a FAQ page or something idk its 
+                your website we can do whatever you want lovey.
+            </p>
+        </div>
+
+        <div class="box">
+            <form action="https://formsubmit.co/641d9aeb1c8d9fa217c3641780445b9b" method="POST">
+
+                <input class="iob" type="text" name="name" placeholder="Name" required><br>
+                <input class="iob" type="text" name="email" placeholder="Email Address" required><br>
+                <textarea class="iobm" id="message" name="message" rows="4" cols="50" placeholder="Message" required></textarea><br>
+                <input class="snd" type="submit" value="Send">
+
+            </formaction>
+        </div>
+
+    </div>
+
+    <!-- Section Divider -->
+
+    <div class="bowstring2">
+
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+
+        <div class="bowliner1"></div>
+
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+        <div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div><div class="bowliner2"></div>
+        <div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div><div class="bowliner1"></div>
+
+    </div>
+
+    <div class="bowstring3">
+        <div class="bow2">
+            <img src="Images/bow.png">
+        </div>
+    </div>
+
     <!-- Bottom Section -->
 
-    <!-- <div class="botter">
-
-        <div>
-            <p> Cupcake Flavors! </p>
-        </div>
-        
+    <div class="botter"> 
 
         <div class="gallery">
 
@@ -116,13 +228,65 @@
                 <div class="flavtitle"> <p> Flavor Town </p> </div>
                 <div class="flavdesc">
                     <div class="descimg"><img src="Images/RoadtoBruma.jpg"></div>
-                    <div class="desctext"><p>text</p></div>
+                    <div class="desctext"><p>
+                        This is where you can list flavors or whatever.
+                        We can add more in-depth stuff if they click on it,
+                        which will also bring up the picture bigger.
+                    </p></div>
+                </div>
+            </div>
+
+            <div class="flavcon">
+                <div class="flavtitle"> <p> Flavor Town </p> </div>
+                <div class="flavdesc">
+                    <div class="descimg"><img src="Images/RoadtoBruma.jpg"></div>
+                    <div class="desctext"><p>
+                        This is where you can list flavors or whatever.
+                        We can add more in-depth stuff if they click on it,
+                        which will also bring up the picture bigger.
+                    </p></div>
+                </div>
+            </div>
+
+            <div class="flavcon">
+                <div class="flavtitle"> <p> Flavor Town </p> </div>
+                <div class="flavdesc">
+                    <div class="descimg"><img src="Images/RoadtoBruma.jpg"></div>
+                    <div class="desctext"><p>
+                        This is where you can list flavors or whatever.
+                        We can add more in-depth stuff if they click on it,
+                        which will also bring up the picture bigger.
+                    </p></div>
+                </div>
+            </div>
+
+            <div class="flavcon">
+                <div class="flavtitle"> <p> Flavor Town </p> </div>
+                <div class="flavdesc">
+                    <div class="descimg"><img src="Images/RoadtoBruma.jpg"></div>
+                    <div class="desctext"><p>
+                        This is where you can list flavors or whatever.
+                        We can add more in-depth stuff if they click on it,
+                        which will also bring up the picture bigger.
+                    </p></div>
+                </div>
+            </div>
+
+            <div class="flavcon">
+                <div class="flavtitle"> <p> Flavor Town </p> </div>
+                <div class="flavdesc">
+                    <div class="descimg"><img src="Images/RoadtoBruma.jpg"></div>
+                    <div class="desctext"><p>
+                        This is where you can list flavors or whatever.
+                        We can add more in-depth stuff if they click on it,
+                        which will also bring up the picture bigger.
+                    </p></div>
                 </div>
             </div>
 
         </div>
 
-    </div> -->
+    </div>
 
 </body>
 
