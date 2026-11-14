@@ -32,6 +32,8 @@
         }
     </script>
 
+    
+
 </head>
 
 <body>
@@ -224,69 +226,60 @@
 
         <div class="gallery">
 
-            <div class="flavcon">
-                <div class="flavtitle"> <p> Flavor Town </p> </div>
+            <!-- Button Preset -->
+            <!-- <button class="flavcon" type="button" data-img="Images/???" data-title="???">
+                <div class="flavtitle"> <p> !!!TITLE!!! </p> </div>
                 <div class="flavdesc">
-                    <div class="descimg"><img src="Images/RoadtoBruma.jpg"></div>
+                    <div class="descimg"><img src="Images/???"></div>
                     <div class="desctext"><p>
-                        This is where you can list flavors or whatever.
-                        We can add more in-depth stuff if they click on it,
-                        which will also bring up the picture bigger.
+                        !!!DESCRIPTION!!!
                     </p></div>
                 </div>
-            </div>
+            </button> -->
 
-            <div class="flavcon">
-                <div class="flavtitle"> <p> Flavor Town </p> </div>
+            <button class="flavcon" type="button" data-img="Images/Double chocolate cupcakes with chocolate buttercream father_s day decor.jpg" data-title="Double chocolate cupcakes with double chocolate buttercream frosting. Extra allergy info? Not gluten free? Probably not vegan? Don't take if you're allergic to its ingredients?">
+                <div class="flavtitle"> <p> Double Double Chocolate </p> </div>
                 <div class="flavdesc">
-                    <div class="descimg"><img src="Images/RoadtoBruma.jpg"></div>
+                    <div class="descimg"><img src="Images/Double chocolate cupcakes with chocolate buttercream father_s day decor.jpg"></div>
                     <div class="desctext"><p>
-                        This is where you can list flavors or whatever.
-                        We can add more in-depth stuff if they click on it,
-                        which will also bring up the picture bigger.
+                        Double chocolate cupcakes with double chocolate buttercream frosting.
                     </p></div>
                 </div>
-            </div>
-
-            <div class="flavcon">
-                <div class="flavtitle"> <p> Flavor Town </p> </div>
-                <div class="flavdesc">
-                    <div class="descimg"><img src="Images/RoadtoBruma.jpg"></div>
-                    <div class="desctext"><p>
-                        This is where you can list flavors or whatever.
-                        We can add more in-depth stuff if they click on it,
-                        which will also bring up the picture bigger.
-                    </p></div>
-                </div>
-            </div>
-
-            <div class="flavcon">
-                <div class="flavtitle"> <p> Flavor Town </p> </div>
-                <div class="flavdesc">
-                    <div class="descimg"><img src="Images/RoadtoBruma.jpg"></div>
-                    <div class="desctext"><p>
-                        This is where you can list flavors or whatever.
-                        We can add more in-depth stuff if they click on it,
-                        which will also bring up the picture bigger.
-                    </p></div>
-                </div>
-            </div>
-
-            <div class="flavcon">
-                <div class="flavtitle"> <p> Flavor Town </p> </div>
-                <div class="flavdesc">
-                    <div class="descimg"><img src="Images/RoadtoBruma.jpg"></div>
-                    <div class="desctext"><p>
-                        This is where you can list flavors or whatever.
-                        We can add more in-depth stuff if they click on it,
-                        which will also bring up the picture bigger.
-                    </p></div>
-                </div>
-            </div>
+            </button>
 
         </div>
 
     </div>
+
+    <!-- Lightbox stuff for "menu" items -->
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+    
+        document.querySelectorAll('.flavcon').forEach(button => {
+        button.addEventListener('click', () => {
+            const imgSrc = button.getAttribute('data-img');
+            const caption = button.getAttribute('data-title');
+    
+            lightboxImg.src = imgSrc;
+            lightboxCaption.textContent = caption;
+            lightbox.classList.add('show');
+        });
+        });
+    
+        lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('show');
+        });
+    </script>
 
 </body>
 
