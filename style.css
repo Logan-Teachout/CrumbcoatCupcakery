@@ -16,6 +16,7 @@ body{
         var(--lyell) .5vw,
         var(--lyell) 1vw
     );
+    color: var(--bow);
     height: auto;
     width: 100%;
     font-family: 'Euphoria Script', serif;
@@ -79,9 +80,10 @@ body{
 
 .bowstring2{
     background: var(--bow);
+    padding: 0;
     height: 1.5vw;
     margin-left: 4.5vw;
-    margin-right: 5vw;
+    margin-right: 4.8vw;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -127,10 +129,11 @@ body{
     background-color: var(--lyell);
     margin-left: 4.5vw;
     margin-right: 5vw;
+    padding-top: 1.5vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 40vw;
+    height: auto;
 }
 
 .toptext{
@@ -139,6 +142,34 @@ body{
     margin-left: 1vw;
     margin-top: 1.5vw;
     height: 37vw;
+    width: 37vw;
+}
+
+.inst{
+    width: 5vw;
+    height: 5vw;
+    margin-left: 15vw;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.inst:hover{
+    cursor: pointer;
+}
+
+.inst img{
+    width: 100%;
+    height: 100%;
+}
+
+.toptext2{
+    background-color: transparent;
+    font-size: 2vw;
+    margin-left: 1vw;
+    margin-top: 1.5vw;
+    height: auto;
     width: 37vw;
 }
 
@@ -202,8 +233,8 @@ body{
     bottom: 1vw;
     left: 1vw;
     right: 1vw;
-    background-color: #6E381DAA;
-    color: #E67E93AA;
+    background-color: #6E381DDD;
+    color: var(--pink);
     font-family: 'Euphoria Script', serif;
     font-size: 1.7vw;
 }
@@ -218,7 +249,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 40vw;
+    height: auto;
 }
 
 .context{
@@ -228,6 +259,24 @@ body{
     margin-top: 1.5vw;
     height: 37vw;
     width: 37vw;
+}
+
+.switch{
+    background-color: var(--bow);
+    color: var(--lyell);
+    width: 10vw;
+    height: 5vw;
+    font-family: 'Euphoria Script', serif;
+    font-size: 1.5vw;
+    margin-left: 11vw;
+    transition: .3s;
+}
+
+.switch:hover {
+    transform: scale(1.1);
+    background-color: var(--pink);
+    color: var(--bow);
+    cursor: pointer;
 }
 
 .box {
@@ -431,6 +480,10 @@ body{
     }
 
     .topper {
+        flex-direction: column;
+    }
+
+    .botter {
         flex-direction: column;
     }
 }
