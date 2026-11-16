@@ -470,10 +470,13 @@ body{
         row-gap: 1vw;
     }
 
+    .topper {
+        margin-bottom: 5vw;
+    }
+
     .inst {
         width: 10vw;
         margin-left: 10vw;
-        margin-bottom: 5vw;
     }
 
     .flavcon {
