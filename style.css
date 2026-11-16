@@ -472,6 +472,8 @@ body{
 
     .inst {
         width: 10vw;
+        margin-left: 10vw;
+        margin-bottom: 5vw;
     }
 
     .flavcon {
