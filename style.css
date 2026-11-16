@@ -465,9 +465,13 @@ body{
 @media (max-width: 900px) {
     .gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         column-gap: 1vw;
         row-gap: 1vw;
+    }
+
+    .flavcon {
+        width: 40
     }
 
     .desctext {
