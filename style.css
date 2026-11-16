@@ -470,15 +470,16 @@ body{
         row-gap: 1vw;
     }
 
+    .inst {
+        width: 6vw;
+    }
+
     .flavcon {
-        width: 40
+        width: 40vw;
     }
 
     .desctext {
-    width: 10vw;
-    }
-
-    .switch{
-    font-size: 1vw;
+        width: auto;
+        font-size: 2vw;
     }
 }
