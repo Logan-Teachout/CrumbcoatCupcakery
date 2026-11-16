@@ -469,15 +469,6 @@ body{
         column-gap: 1vw;
         row-gap: 1vw;
     }
-}
-
-@media (max-width: 400px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 1vw;
-        row-gap: 1vw;
-    }
 
     .topper {
         flex-direction: column;
@@ -494,4 +485,15 @@ body{
     .switch{
     font-size: 1vw;
     }
+}
+
+@media (max-width: 400px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 1vw;
+        row-gap: 1vw;
+    }
+
+
 }
