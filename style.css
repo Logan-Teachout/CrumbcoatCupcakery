@@ -471,7 +471,7 @@ body{
     }
 
     .inst {
-        width: 6vw;
+        width: 10vw;
     }
 
     .flavcon {
@@ -484,7 +484,7 @@ body{
     }
 
     .desctext {
-        width: 20vw;
+        width: 17vw;
         font-size: 2.5vw;
     }
 }
