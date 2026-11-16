@@ -486,4 +486,12 @@ body{
     .botter {
         flex-direction: column;
     }
+
+    .desctext {
+    width: 10vw;
+    }
+
+    .switch{
+    font-size: 1vw;
+    }
 }
