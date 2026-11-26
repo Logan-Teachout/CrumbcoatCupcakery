@@ -141,7 +141,7 @@ body{
     font-size: 2.5vw;
     margin-left: 1vw;
     margin-top: 1.5vw;
-    height: 37vw;
+    height: auto;
     width: 37vw;
 }
 
@@ -149,6 +149,7 @@ body{
     width: 5vw;
     height: 5vw;
     margin-left: 15vw;
+    margin-bottom: 1vw;
     overflow: hidden;
     background-color: transparent;
     box-shadow: none;
